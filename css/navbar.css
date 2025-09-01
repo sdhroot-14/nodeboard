@@ -1,0 +1,23 @@
+header {
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+header a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+header a:hover{
+    color: red;
+}
+
+header .nav_hover:hover {
+  color: red;
+}
+header div{
+    float: right;   
+    font-weight: bold;
+    margin-right: 20px;
+}

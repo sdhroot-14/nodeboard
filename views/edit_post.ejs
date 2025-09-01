@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>게시판</title>
+  <link rel="stylesheet" href="/edit_post.css" />
+</head>
+<body>
+  <%- include('navbar.ejs') %>
+
+  <div class="container">
+    <h2>글 수정하기</h2>
+    <form action="/posts/<%= id %>/edit" method="post">
+      <label for="title">제목</label>
+      <input type="text" id="title" name="title" value="<%= post.title %>" required>
+
+      <label for="content">내용</label>
+      <textarea id="content" name="content" required><%= post.content %></textarea>
+
+      <div class="buttons">
+        <button type="submit" class="btn">수정 완료</button>
+        <a href="/posts/<%= id %>" class="btn">취소</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

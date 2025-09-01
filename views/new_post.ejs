@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>게시판</title>
+  <link rel="stylesheet" href="/new_post.css" />
+</head>
+<body>
+  <%- include('navbar.ejs') %>
+  <h2>새 글 작성</h2>
+  <form action="/posts" method="post">
+    제목: <input type="text" name="title" required><br>
+    내용: <textarea name="content" required></textarea><br>
+    <button type="submit">글쓰기</button>
+  </form>
+  <a href="/posts" class="post">목록으로</a>
+</body>
+</html>

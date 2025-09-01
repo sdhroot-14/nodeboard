@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/posts.css">
+</head>
+<body>
+  <%- include('navbar.ejs') %>
+  <h2>게시글 목록</h2>
+  <a href="/posts/new" class="write">글쓰기</a>
+  <ul class="post-list">
+  <% posts.forEach((post, index) => { %>
+    <li class="post-item" onclick="location.href='/posts/<%= index %>'">
+      <span class="post-author">작성자: <%= post.author %> - </span>
+      <span class="post-title"><%= post.title %></span>
+    </li>
+  <% }) %>
+</ul>
+
+</body>
+</html>

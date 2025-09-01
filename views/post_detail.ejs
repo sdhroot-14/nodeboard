@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= post.title %></title>
+  <link rel="stylesheet" href="/post_detail.css">
+</head>
+<body>
+  <%- include('navbar.ejs') %>
+
+  <div class="container">
+    <h2 class="title">제목: <%= post.title %></h2>
+    <h2 class="meta">작성자: <%= post.author %></h2>
+    <h2 class="content"><%= post.content %></h2>
+
+    <div class="actions">
+      <a href="/posts" class="btn">목록으로</a>
+      <a href="/posts/<%= id %>/edit" class="btn">수정</a>
+      <form action="/posts/<%= id %>/delete" method="post">
+        <button type="submit" class="btn" onclick="return confirm('정말 삭제할까요?');">삭제</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-weight: bold;
+  color: #444;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+form textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+}

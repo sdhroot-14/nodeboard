@@ -1,0 +1,6 @@
+node_modules
+
+package-lock.json
+package.json
+board_project/package-lock.json
+board_project/package.json

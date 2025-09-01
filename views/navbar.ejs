@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>게시판</title>
+  <link rel="stylesheet" href="/navbar.css" />
+</head>
+
+<body>
+  <header>
+      <a href="/posts">게시판</a>
+        <div class="log_tool">
+          <% if (user) { %>
+            <span><%= user.username %>님</span>
+            <a href="/logout" class="nav_hover">로그아웃</a>
+          <% } else { %>
+            <a href="/login" class="nav_hover">로그인</a>
+            <a href="/register" class="nav_hover">회원가입</a>
+      <% } %>
+    </div>
+  </header>
+</body>
+</html>
